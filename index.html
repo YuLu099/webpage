@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Build your "bomb"</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="diaoDiv"> </div>
+
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            Build your "bomb"
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#pre">Preparation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#know">Know</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#setup">Setup</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#build">Building</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+
+    <!-- video start -->
+    <section style="background-color: rgb(224, 80, 80);padding:100px 0;overflow: hidden;">
+        <h5 class="text-center">Don't touch.</h5>
+        <div class=" container">
+            <div class="row">
+                <div class="col-12" style="position: relative;">
+                    <video controls muted style="width: 100%;" poster="images/playPointer.png" id="playVideo">
+                        <source src="video/pi.mp4" type="video/mp4">
+                    </video>
+                    <div id="playPointer">
+                      <img src="images/playPointer.png" alt="" id="playPointerImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- video end -->
+
+    <!-- pre start -->
+    <section id="pre" style="background-color: #fff;padding:80px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center pinkfont">Preparation</h2>
+                    <p class="text-center"> Here are the list of items you need to set up your "bomb"</p>
+                </div>
+                <div class="container my-4 d-flex justify-content-center">
+                    <hr>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <!-- Default checked -->
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check1">
+                                <label class="custom-control-label" for="check1">Rapsberry Pi</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <!-- Default checked -->
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check2">
+                                <label class="custom-control-label" for="check2">Sense Hat</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <!-- Default checked -->
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check3">
+                                <label class="custom-control-label" for="check3">Monitor, Keyboard, Mouse</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <!-- Default checked -->
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check4">
+                                <label class="custom-control-label" for="check4">Power supply</label>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- know start -->
+    <section id="know" style="background-color: #fff;padding:80px 0;background: url(./images/dots1.jpg) repeat;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3 class="pinkfont">What is Raspberry Pi</h3>
+                    <p>Raspberry Pi is a series of small single-board computers developed in the United Kingdom by the Raspberry Pi Foundation. It is widely used in many areas, such as for weather monitoring, because of its low cost, modularity, and open design. It is typically used by computer and electronic hobbyists, due to its adoption of HDMI and USB devices.</p>
+                </div>
+                <div class="col-md-4" id="what">
+                    <img src="images/r1.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- know end -->
+
+ <!-- setup start -->
+    <section id="setup" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+              <div class="col-6" id="setup">
+                  <h3 class="mb-3 pinkfont">Setting Up </h3>
+              </div>
+              <div class="col-6 text-right">
+                <div class="button">
+                  <a class="btn btn-danger mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev" id="right-panel-link">
+                      <i class="fa fa-arrow-left"></i>
+                  </a>
+                  <a class="btn btn-danger mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next" id="left-panel-link">
+                      <i class="fa fa-arrow-right"></i>
+                  </a>
+              </div>
+            </div>
+              <div class="col-12">
+                  <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+      
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <div class="row">
+      
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="images/7.jpg">
+                                          <div class="card-body">
+                                              <h4 class="card-title text-danger">Hardwares</h4>
+                                              <p class="card-text text-muted" >You will need a power supply, MicroSD card, keyboard, monitor, mouse and a HDMI cable for initial set up.  </p>
+      
+                                          </div>
+      
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="images/2.png">
+                                          <div class="card-body">
+                                              <h4 class="card-title text-danger">Raspberry Pi Imager</h4>
+                                              <p class="card-text text-muted">Use Rpi Imager to install Raspberry Pi OS on your SD card. Anything that’s stored on the SD card will be overwritten during formatting.</p>
+      
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="images/1.png">
+                                          <div class="card-body">
+                                              <h4 class="card-title text-danger">Compose</h4>
+                                              <p class="card-text text-muted">Now get everything connected to your Raspberry Pi. It’s important to do this in the right order, so that all your components are safe.</p>
+      
+                                          </div>
+                                      </div>
+                                  </div>
+      
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="row">
+      
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="images/3.png">
+                                          <div class="card-body">
+                                              <h4 class="card-title text-danger">Power</h4>
+                                              <p class="card-text text-muted">Connect it to your Raspberry Pi’s power port, after a few seconds the Raspberry Pi OS desktop will appear.</p>
+      
+                                          </div>
+      
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="images/4.png">
+                                          <div class="card-body">
+                                              <h4 class="card-title text-danger">Finishing</h4>
+                                              <p class="card-text text-muted">The Welcome to Raspberry Pi application will pop up and guide you through the initial setup, click next to start.</p>
+      
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                      <div class="card">
+                                          <img class="img-fluid" alt="100%x280" src="images/5.png">
+                                          <div class="card-body">
+                                              <h4 class="card-title text-danger">Find help</h4>
+                                              <p class="card-text text-muted">If you’re having problems with your Raspberry Pi, you can get help and advice from Raspberry Pi forum and Raspberry Jam community. </p>
+      
+                                          </div>
+                                      </div>
+                                  </div>
+      
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </section>
+      
+ <!-- setup end -->
+
+ 
+ <!-- build start -->
+
+    <section id="build" style="padding:100px 0;overflow: hidden;">
+        <h2 class="text-center" style="color:rgb(255, 255, 255)">Let's start building!</h2>
+        <div class="container mt-5">
+            <div class="accordion" id="accordionExample">
+
+                <div class="card">
+                    <div class="card-header" id="heading2">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapse2" aria-expanded="false"
+                                aria-controls="collapse2">
+                                <h6>step1: import</h6>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <pre id="code-block" class="prettyprint">
+                                #Import the modules and libraries needed for this project
+                                from sense_hat import SenseHat
+                                from time import sleep
+                                sense = SenseHat()
+                                #Clear the sense hat screen before running the program
+                                sense.clear()
+                                #Set colour for the pixels
+                                R=[255,0,0]
+                                Y=[255,200,0]
+                                e=[0,0,0]
+                                }</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="heading3">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapse3" aria-expanded="false"
+                                aria-controls="collapse3">
+                                <h6>step2: draw pattern</h6>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <pre id="code-block" class="prettyprint">
+                                #Two pixel patterns, in various color
+                                image=[
+                                e,e,e,e,e,e,e,e,
+                                e,e,e,Y,Y,e,e,e,
+                                e,e,e,Y,Y,e,e,e,
+                                e,e,e,Y,Y,e,e,e,
+                                e,e,e,Y,Y,e,e,e,
+                                e,e,e,e,e,e,e,e,
+                                e,e,e,Y,Y,e,e,e,
+                                e,e,e,e,e,e,e,e,
+                                ]
+                            
+                                image2=[
+                                e,e,e,e,e,e,e,e,
+                                R,e,R,e,e,R,e,R,
+                                e,R,e,e,e,e,R,e,
+                                R,e,R,e,e,R,e,R,
+                                e,e,e,e,e,e,e,e,
+                                e,e,e,R,R,e,e,e,
+                                e,e,R,e,e,R,e,e,
+                                e,e,e,e,e,e,e,e,
+                                ]
+
+                                #Show image (exaggeration mark) at the very beginning
+                                timer=[]
+                                sense.set_pixels(image)
+                                }</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="heading4">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapse4" aria-expanded="false"
+                                aria-controls="collapse4">
+                                <h6>step3: walking</h6>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <pre id="code-block" class="prettyprint">
+                                #Define a function called walking, which represents the countdown process, start from 5 to 0
+                                #the number decreases by 1 every second
+                                def walking():
+                                for i in range (5,-1,-1):
+                                sense.show_letter( str(i),R)
+                                sleep(1)
+                                }</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                <h6>step4: order</h6>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <pre id="code-block" class="prettyprint">
+                                #Define a function that shows image2 (the face pattern)
+                                def img():
+                                for i in range (1):
+                                sense.set_pixels(image2)
+                                }</pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                <h6>step5: compose</h6>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            <pre id="code-block" class="prettyprint">
+                                //Import accelerometer, movement will be detected once Rpi moves
+                                //After moving, the screen will show the countdown first, and then image 2
+                                while True:
+                                acc=sense.get_accelerometer_raw()
+                                if acc['x']>2 or acc['y']>2 or acc['z']>2:
+                                 walking();
+                                 img()
+                                }</pre>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+ <!-- build end -->
+
+    <div id="Done">
+      <button id="RUN">
+        <h7>Done?</h7>
+        </button>
+    </div>
+
+  
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+
+
+</body>
+
+</html>

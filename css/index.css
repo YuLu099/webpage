@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  padding: 50px 0;
+}
+
+h5 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  padding: 50px 0;
+  font-family: 'Press Start 2P', cursive;
+}
+
+h6 {
+  position:relative;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(224, 80, 80);
+  top:5px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+h7 {
+  position:relative;
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(224, 80, 80);
+  font-family: 'Press Start 2P', cursive;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+h2.pinkfont,
+h3.pinkfont {
+  color: #683aa4;
+}
+
+p {
+  font-size: 20px;
+  text-align: justify;
+  line-height: 160%;
+}
+
+#build h2 {
+  padding: 0;
+}
+
+#build button {
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+#build p {
+  padding: 20px 30px;
+}
+
+#button{
+  position: relative;
+}
+#right-panel-link {
+  position: absolute;
+  top: 60px;
+  right: 90px;
+}
+#left-panel-link {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+}
+#build{
+  background-image: linear-gradient(rgb(224, 80, 80),rgb(173, 55, 0),rgb(0, 0, 0));
+}
+
+#playVideo{
+  opacity: 0;
+}
+#playPointer{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+#playPointer>img{
+  width: 50%;
+  height: auto;
+  cursor: pointer;
+}
+*{
+  cursor:url('../images/favicon-2.ico'),auto;
+}
+
+#Done{
+  width: 100%;
+  height:80%;
+  background: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 200px;
+}
+#Done>button{
+  background: #fff;
+  padding: 50px 100px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  font-size: 50px;
+  transform: skew(-20deg);
+  font-family: 'Press Start 2P', cursive;
+}
+
+
+    #diaoDiv{
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      overflow: hidden;
+    }
+    .diaoImg{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2%;
+      height: auto;
+      animation:mymove 5s linear forwards;
+    }
+    @keyframes mymove {
+      0%{
+          top: -20%;
+          transform: rotate(20deg);
+      }
+      50%{
+          top: 40%;
+          transform: rotate(120deg);
+      }
+      100%{
+          top: 110%;
+          transform: rotate(200deg);
+          margin: 
+      }
+    }
+  #code-block{
+      position: relative;
+      right: 250px;
+      border: none;
+    }
+
+  #what{
+    top:30px;
+  }
+
+  #setup{
+    top:30px;
+  }
+
+  .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    background-color:rgb(224, 80, 80);
+  }
+ 
